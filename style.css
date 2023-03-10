@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #104c49;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #e4c215;
+}
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(7, auto); */
+
+  height: fit-content;
+  width: fit-content;
+  box-shadow: 0px 1px 2px 0px hsla(0, 0%, 0%, 0.035),
+    0px 2px 4px 0px hsla(0, 0%, 0%, 0.07), 0px 4px 8px 0px hsla(0, 0%, 0%, 0.07),
+    0px 8px 16px 0px hsla(0, 0%, 0%, 0.07),
+    0px 32px 64px 0px hsla(0, 0%, 0%, 0.07);
+}
+
+.grid-item {
+  width: 1vw;
+  height: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-isTall {
+  height: 3vw;
+}
+
+.grid-isWide {
+  width: 3vw;
+}
+
+.pointer {
+  cursor: pointer;
+  background-color: #e4c21533;
+}
+
+.grid-isClosed {
+  background-color: #e4c215;
+}
+
+.grid-isEdge {
+  background-color: #e4c215;
+}
+
+.grid-isStart {
+  background-color: #1bff5f;
+  border: 2px solid white;
+}
+.grid-isEnd {
+  background-color: #ff5549;
+  border: 2px solid white;
+}
+
+/* SLIDER */
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.slider input {
+  width: 420px;
+  height: 4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.grid-isPath {
+  background-color: aqua;
+}
+
+.small-square {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  z-index: 1;
+}
